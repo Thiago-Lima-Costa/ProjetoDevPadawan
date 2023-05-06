@@ -1,0 +1,1002 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bgbody {
+    background: black;
+}
+
+.headercontainer {
+    background-image: url('../img/tela.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    margin: 3px 10px 40px 10px;
+    border: 4px solid #ffc107;
+    border-radius: 15px;
+}
+
+.headersubdiv {
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+}
+
+.imglogo {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#quote {
+    transform: translateY(-100%);
+}
+
+@media screen and (min-width: 992px) {
+    #quote {
+        font-size: 1.2em;
+        transform: translateY(-100%);
+    }
+
+    .cards {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    #quote {
+        font-size: 0.9em;
+        transform: translateY(-70%);
+    }
+
+    .cards {
+        width: 90%;
+    }
+}
+
+#userbox {
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#usericon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -10%);
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+
+#userdropdown {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+}
+
+.user-dropdown-item {
+    color: white !important;
+}
+
+#userdropdown a:hover {
+    background-color: #ffc107;
+    color: black;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+}
+
+.headernavlinks {
+    color: black;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.headerlink a:link, a:visited {
+    text-decoration: none;
+    background-color: black;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+  
+.headerlink a:hover, a:active {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 2px solid #1eff45;
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+.modal-content {
+    border: 5px solid #ffc107 !important;
+    border-radius: 15px !important;
+    background-color: black !important;
+    color: #ffc107;
+    width: auto !important;
+    min-width: 200px !important;
+    height: auto !important;
+}
+
+.modal-header .modal-body .modal-footer {
+    border: 5px solid #ffc107 !important;
+}
+
+.modal-div-header {
+    display: flex !important; 
+    justify-content: center !important;
+}
+
+.modal-header i {
+    margin: 10px;
+    font-size: 2.3em;
+}
+
+.modal-header h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+.modal-close {
+    color: #ffc107 !important;
+}
+
+.modal-btn {
+    background-color: black !important;
+    color: #ffc107 !important;
+    border: 3px solid #ffc107 !important;
+    border-radius: 15px !important;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+}
+
+.modal-btn:hover {
+    text-decoration: none !important;
+    font-weight: bolder !important;
+    transition: 1s !important;
+    transition-delay: 0.3s !important;
+    color: black !important;
+    border: 2px solid #1eff45 !important;
+    background: #1eff45 !important;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+}
+
+
+
+#toggleicon {
+    background-color: black;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 2px;
+    text-align: center;
+}
+
+#dropdownitem {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+}
+
+#dropdown-login {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#dropdown-login div {
+    background-color: black;
+
+}
+
+#dropdown-login h4, label, h5 {
+    color: #ffc107;
+}
+
+#dropdown-login p {
+    color: darkgrey;
+}
+
+#dropdown-login input {
+    background-color: black;
+    color: white;
+}
+
+#link-google {
+    text-decoration: none;
+    letter-spacing: 0px;
+    background: #e82e1e;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+}
+
+#link-twitter {
+    text-decoration: none;
+    letter-spacing: 0px;
+    background: #1da1f2;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+}
+
+#searchinput {
+    background: black;
+    border: 2px solid #ffc107;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    min-width: 250px;
+    
+}
+
+#searchbtn {
+    background: black;
+    border: 1px solid #ffc107;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffc107;
+}
+
+#searchbtn:hover {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 1px solid #1eff45;
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #ffc107;
+    transition: 0.5s;
+}
+
+.home-link:visited {
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: bolder !important;
+    transition: 1s !important;
+    transition-delay: 0.3s !important;
+    color: #1eff45;
+    text-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+}
+
+.content span {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #ffc107;
+    margin-left: 10px;
+}
+
+.contentbox {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 4px solid #ffc107;
+    border-radius: 15px;
+}
+
+.contentPreview {
+    margin: auto;
+    padding: 5px; 
+    border-radius: 15px;  
+}
+
+.contentPreview p {
+    color: #ffc107;
+}
+
+.contentPreview h5 {
+    color: #ffc107;
+}
+
+.contentPreview img {
+    height: 8vh !important;
+    width: 8vh !important;
+}
+
+.shadowbox {
+    box-shadow: 0 3px 10px #ffc107;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #ffc107;
+    border-radius: 15px;  
+    padding: 15px 5px 10px 5px;
+    display: inline-block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cards a:link, a:visited {
+    text-decoration: none;
+    background-color: black;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.cards a:hover, a:active {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 2px solid #1eff45;
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+.cards img {
+ 
+    width: 100%;
+    border-radius: 10%;
+    margin: auto;
+}
+
+#registerbg {
+    background-image: url('../img/tela.jpg');
+    width: 80%;
+    min-width: 250px;
+    margin: auto;
+    border: 5px solid #ffc107;
+    border-radius: 15px;
+    padding: 40px 40px 40px 40px;
+}
+
+#registerbg button {
+    text-decoration: none;
+    background-color: black;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#registerbg button:hover {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 2px solid #1eff45;
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+#registerbg input {
+    background-color: black;
+    color: white;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+}
+
+#registerbg h5 {
+    color: #ffc107;
+}
+
+.alerta-popup {
+    border: 5px solid #ffc107;
+    border-radius: 15px !important;
+    width: auto !important;
+    min-width: 200px !important;
+    height: auto !important;
+  }
+
+  .alerta-btn {
+    background-color: black !important;
+    color: #ffc107 !important;
+    border: 3px solid #ffc107 !important;
+    border-radius: 15px !important;
+    box-shadow: none !important;
+  }
+
+  .alerta-btn:hover {
+    text-decoration: none !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    transition: 1s !important;
+    transition-delay: 0.3s !important;
+    color: black !important;
+    border: 2px solid #1eff45 !important;
+    background: #1eff45 !important;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+  }
+
+  .errorPage {
+    background-color: black;
+    padding: 15px;
+  }
+
+  .errorPageDiv {
+    height: 95vh;
+    width: 60%;
+    background-image: url('../img/error_img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+    padding: auto;
+    margin: auto;
+    border: 3px solid #00e600;
+    border-radius: 15px;
+  }
+
+  .errorPageMsg {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-family: "Courier New", "Lucida Console", monospace;
+    font-weight: bold;
+    color: #00e600;
+    text-shadow: 0 0 2px #00e600,
+    0 0 10px #00e600;
+    padding: 15px;
+    margin: 30px;
+    background-color: black;
+    border: 2px solid #00e600;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .errorPageBtn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+    font-family: "Courier New", "Lucida Console", monospace;
+    font-weight: bold;
+    color: #00e600;
+    text-shadow: 0 0 5px #00e600,
+    0 0 15px #00e600;
+    padding: 15px;
+    margin: 30px;
+    background-color: black;
+    border: 2px solid #00e600;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .errorPageBtn:hover {
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 2px solid #00e600;
+    background: #00e600;
+    box-shadow: 0 0 5px #00e600,
+    0 0 15px #00e600,
+    0 0 30px #00e600,
+    0 0 60px #00e600;
+  }
+  
+  .profile-body {
+    margin: 3px 10px 40px 10px !important;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .profile-content {
+    border: 4px solid #ffc107;
+    border-radius: 15px;
+    padding: auto !important;
+    margin: auto !important;
+  }
+
+  .profile-adsense {
+    padding: auto;
+    margin: auto;
+    display: inline-block;
+    height: 290px;
+    background-color: #e82e1e;
+  }
+
+  .profile-div {
+    margin: auto;
+    display: inline-block;
+  }
+
+  .profile-middiv {
+    border-left: 1px solid #ffc107;
+    border-right: 1px solid #ffc107;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  @media screen and (max-width: 767.98px) {
+    .profile-middiv {
+        border-left: none;
+        border-right: none;
+        padding-top: auto;
+        padding-bottom: auto;
+    }
+  }
+
+  .profile-img {
+    height: 200px;
+    width: 200px;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ffc107;
+    background-color: #ffc107;
+  }
+
+  .profile-username {
+    color: #ffc107;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+
+  .profile-email {
+    color: #ffff99;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 10px;
+  }
+
+  .profile-form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .edit-profile-div {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .edit-profile-div form {
+    margin: auto;
+  }
+
+  .edit-option {
+    margin-top: 60px !important;
+  }
+
+  .edit-option-pass {
+    margin-top: 100px !important;
+  }
+
+  .profile-btn {
+    background-color: black !important;
+    color: #ffc107 !important;
+    border: 3px solid #ffc107 !important;
+    border-radius: 15px !important;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+}
+
+.profile-btn:hover {
+    text-decoration: none !important;
+    font-weight: bolder !important;
+    transition: 2s !important;
+    transition-delay: 0.3s !important;
+    color: black !important;
+    border: 2px solid #1eff45 !important;
+    background: #1eff45 !important;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+}
+
+.forum-link {
+    text-decoration: none;
+}
+
+.forum-link h3 {
+    color: #ffc107;
+    transition: 0.5s;
+}
+
+.forum-link:visited {
+    text-decoration: none;
+}
+
+.forum-link:hover {
+    text-decoration: none;
+}
+
+.forum-link:hover h3 {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder !important;
+    transition: 1s !important;
+    transition-delay: 0.3s !important;
+    color: #1eff45;
+    text-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+}
+
+.forum-topic {
+    border: 4px solid #ffc107;
+    border-radius: 15px;
+}
+
+.forum-topic img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+
+.topic-post {
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+}
+
+.topic-post img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ffc107;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+
+#response-usericon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffc107;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+
+#response-arrow {
+    font-size: 3em;
+    color: #ffc107;
+    margin-right: 3px;
+}
+
+
+/* Inicio da estilizacao do BlogView */
+
+.img-blog-mini {
+    width: 30%;
+    height: 100%; 
+    border: 2px solid #ffc107;
+}
+
+.article-link {
+    text-decoration: none;
+}
+
+.article-link h3 {
+    color: #ffc107;
+    transition: 0.5s;
+}
+
+.article-link:visited {
+    text-decoration: none;
+}
+
+.article-link:hover {
+    text-decoration: none;
+}
+
+.article-link:hover h3 {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bolder !important;
+    transition: 1s !important;
+    transition-delay: 0.3s !important;
+    color: #1eff45 !important;
+    text-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45 !important;
+}
+
+/* Fim da estilizacao do BlogView */
+
+/* Inicio da estilizacao do ArticleView */
+
+.article-page p {
+    text-align: justify;
+}
+
+/* Fim da estilizacao do ArticleView */
+
+/* tooltip personalizado - definir o atributo data-title ao invés de title */
+[data-title] {
+    position: relative; 
+    cursor: help;
+}
+
+[data-title]:before {
+    content: attr(data-title); 
+    position: absolute; 
+    bottom: 100%; 
+    left: 50%; 
+    padding: 5px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    color: black; 
+    transition: 2s;
+    transition-delay: 0.3s;
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45; 
+    border-radius: 5px; 
+    white-space: nowrap; 
+    opacity: 0; 
+}
+
+[data-title]:hover:before {
+    opacity: 1; 
+    z-index: 999;
+}
+ /* Fim do tooltip personalizado */
+
+ /* Inicio da estilizacao das divs com ADSense */
+
+ .ad-div-horizontal {
+    position:sticky;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+ }
+
+ .ad-div-vertical {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+ /* Fim da estilizacao das divs com ADSense */
+
+ /* Inicio da estilizacao dos links do trait Paginate */
+
+ .paginate-link {
+    text-decoration: none;
+    transition: 0.5s;
+ }
+
+.paginate-link:hover {
+    text-decoration: none;
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 1px solid #1eff45 !important;
+    background: #1eff45 !important;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+
+/* Fim da estilizacao dos links do trait Paginate */
+
+/* Inicio da estilizacao da pagina de recuperacao de senha */
+
+.recoverLink {
+    text-decoration: none !important;
+    border: none !important;
+    color: #dc3545 !important;
+}
+
+.recoverLink:hover{
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffc107 !important;
+    letter-spacing: 0px !important;
+    background: none !important;
+    border: none !important;
+    font-weight: normal !important;
+}
+
+.recoverPage {
+    background-color: black;
+    padding: 15px;
+}
+
+.recoverPageDiv {
+    height: 95vh;
+    width: 60%;
+    background-image: url('../img/error_img3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+    padding: auto;
+    margin: auto;
+    border: 3px solid #00e600;
+    border-radius: 15px;
+}
+
+.recoverPageForm {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px solid #00e600;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 25% !important;
+    margin: auto;
+    width: 60%;
+}
+
+.recoverPageForm h5 {
+    color: #00e600;
+}
+
+.recoverPageBtn {
+    margin: auto;
+    text-align: center !important;
+    font-family: "Courier New", "Lucida Console", monospace;
+    font-weight: bold;
+    color: #00e600;
+    text-shadow: 0 0 5px #00e600,
+    0 0 15px #00e600;
+    padding: 15px;
+    background-color: black;
+    border: 2px solid #00e600;
+    border-radius: 10px;
+}
+
+.recoverPageBtn:hover {
+    transition: 1s;
+    transition-delay: 0.3s;
+    color: black;
+    border: 2px solid #00e600;
+    background: #00e600;
+    box-shadow: 0 0 5px #00e600,
+    0 0 15px #00e600,
+    0 0 30px #00e600,
+    0 0 60px #00e600;
+}
+
+/* Fim da estilizacao da pagina de recuperacao de senha */
+
+/* Inicio da estilizacao do formulario de contato */
+
+.contact-form {
+    background-color: black;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px #ffc107;
+}
+
+.contact-form input {
+    background-color: black;
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px #ffc107;
+}
+
+.contact-form textarea{
+    background-color: black;
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px #ffc107;
+}
+
+.contact-form label{
+    color: #ffc107;
+}
+
+.contact-form input::placeholder {
+    color: #ffc107;
+}
+
+.contact-form textarea::placeholder {
+    color: #ffc107;
+}
+
+.contact-form button{
+    color: #ffc107;
+    background-color: black;
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px #ffc107;
+    transition: 1s;
+}
+
+.contact-form button:hover{
+    color: black;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px #ffc107;
+    transition: 1s;
+}
+/* Fim da estilizacao do formulario de contato */

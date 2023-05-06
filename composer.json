@@ -1,0 +1,35 @@
+{
+    "name": "thiago/projeto_dev_padawan",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files":[
+            "app/helpers/alert.php",
+            "app/helpers/checkSession.php",
+            "app/helpers/activityCheck.php",
+            "app/helpers/encrypt.php",
+            "app/helpers/decrypt.php",
+            "app/helpers/generateSessionId.php",
+            "app/helpers/validateSessionId.php",
+            "app/helpers/autoLoginAttempt.php",
+            "app/helpers/goBack.php",
+            "app/helpers/base_url.php",
+            "app/helpers/uri_format.php",
+            "app/helpers/resizeImage.php",
+            "app/helpers/formataData.php",
+            "app/helpers/formataHora.php",
+            "app/helpers/validateInput.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Thiago de lima Costa",
+            "email": "lima.costa.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.14",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
