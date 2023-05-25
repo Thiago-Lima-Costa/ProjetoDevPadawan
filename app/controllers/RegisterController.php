@@ -31,10 +31,13 @@ class RegisterController extends Controller
     $validated = false;
 
     //Sanitiza os dados recebidos via POST
-    $userName = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $pass1 = filter_input(INPUT_POST, 'senha1', FILTER_SANITIZE_STRING);
-    $pass2 = filter_input(INPUT_POST, 'senha2', FILTER_SANITIZE_STRING);
+    // Sanitiza os dados recebidos via POST
+    // Sanitiza os dados recebidos via POST
+    $userName = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $pass1 = filter_input(INPUT_POST, 'senha1', FILTER_SANITIZE_SPECIAL_CHARS);
+    $pass2 = filter_input(INPUT_POST, 'senha2', FILTER_SANITIZE_SPECIAL_CHARS);
+
 
     //Verifica se todos os campos estao preenchidos
     if ($userName == '') {
@@ -125,10 +128,10 @@ class RegisterController extends Controller
         header('Location: /register');
         die();
 
-      } else if (!validateInput('nick', $userName)) {
+       } else if (!validateInput('nick', $userName)) {
 
         //Cria uma variavel SESSION que irá exibir um Modal no frontend
-        $_SESSION['register_failure'] = [
+          $_SESSION['register_failure'] = [
           'title' => 'ERRO NO PREENCHIMENTO',
           'message' => 'O nome de usuário ter entre 3 e 20 caracteres, deve ser formado apenas por letras, números, traço (-), underscore (_) ou ponto (.)!',
           'session_name' => 'register_failure',
@@ -137,7 +140,7 @@ class RegisterController extends Controller
   
           header('Location: /register');
           die();
-
+ 
       } else if (!validateInput('password', $pass1)) {
 
         //Cria uma variavel SESSION que irá exibir um Modal no frontend
@@ -219,6 +222,3 @@ class RegisterController extends Controller
 	}
 
 }
-
-?>
-
