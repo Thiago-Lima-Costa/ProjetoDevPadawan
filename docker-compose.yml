@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  php:
+    image: php:8.1-alpine
+    container_name: php
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+    ports:
+      - 80:80
+    command: >
+      sh -c  
+      "php -S 0.0.0.0:80"   
+    working_dir: /var/www/html/public
+
+  db:
+    image: mysql:latest
+    container_name: db
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+    environment:
+      - MYSQL_DATABASE=db_portal_dev
+      - MYSQL_ALLOW_EMPTY_PASSWORD= "yes"
+      
+    ports:
+      - 3306:3306
+    networks:
+      - mynetwork
+
+  composer:
+    image: composer
+    volumes:
+      - ./:/app
+    working_dir: /app    
+    networks:
+      - mynetwork
+    command: "composer install"
+
+networks:
+  mynetwork:
+   driver: bridge
